@@ -10,7 +10,7 @@ df.head()
 feature= ['SepalLengthCm','SepalWidthCm','PetalLengthCm','PetalWidthCm']
 target = 'Species'
 
-X_train, X_test, y_train, y_test = train_test_split(df[feature], df[target], test_size=0.3, shuffle=True)
+X_train, X_test, y_train, y_test = train_test_split(df[feature], df[target], test_size=0.1, shuffle=True)
 
 clf = DecisionTreeClassifier(criterion='entropy')
 
